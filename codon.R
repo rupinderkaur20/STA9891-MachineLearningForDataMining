@@ -225,7 +225,7 @@ rf.cv.start = Sys.time()
 random.forest.fit = randomForest(x = X, y = as.factor(Y), mtry = sqrt(p))
 rf.cv.time = round(Sys.time() - rf.cv.start, 1)
 
-# median(AUC) by each model
+# median(AUC) for each model
 # lasso
 lasso = filter(auc.df,model == 'Lasso')
 lasso.median = round(median(lasso$auc.test),7)
