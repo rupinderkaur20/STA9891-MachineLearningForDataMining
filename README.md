@@ -20,7 +20,7 @@ Few of the features are:
     - CUU: codes for amino acid leucine
     - GGU: codes for amino acid valine
 
-This dataset uses codon frequencies to classify species into one of the Kingdoms. Each codon form a unit of genetic code in DNA or RNA, and they code for different amino acids. Few examples can be seen above. 
+This dataset uses codon frequencies to classify species to one of the Kingdoms. Each codon form a unit of genetic code in DNA or RNA, and they code for different amino acids. Few examples can be seen above. 
 
 As for our analysis, we only used a subset of the dataset. Because we are doing binary classification, we filtered the observations that only contained the following two classes for Kingdom: 
 - Pln (plant) -> 0 (Negative)
