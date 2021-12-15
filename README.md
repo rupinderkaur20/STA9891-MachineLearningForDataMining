@@ -20,7 +20,7 @@ Few of the features are:
     - CUU: codes for amino acid leucine
     - GGU: codes for amino acid valine
 
-This dataset uses codon frequencies to classify species into different Kingdoms. Each codon form a unit of genetic code in DNA or RNA, and they code for different amino acids. Few examples can be seen above. 
+This dataset uses codon frequencies to classify species into one of the Kingdoms. Each codon form a unit of genetic code in DNA or RNA, and they code for different amino acids. Few examples can be seen above. 
 
 As for our analysis, we only used a subset of the dataset. Because we are doing binary classification, we filtered the observations that only contained the following two classes for Kingdom: 
 - Pln (plant) -> 0 (Negative)
@@ -64,4 +64,4 @@ For the final part of the analysis, we plotted coefficients from logistic lasso,
 We notice that for lasso, elastic net and ridge, most important codons with  positive coefficents are UGA, UAG & UAA, which means that they are the most important when classifying a species as plant. On the other hand, UGU, ACA & CCC are the most important codons with negative coefficients for elastic net and lasso, which means they are most important to classify species as virus. For ridge, most important codons with negative coefficeints are UGU, ACA & AGG. And for random forest, ACA, CUU, UGU & GAC are most important variables. 
 
 ## Conclusion
-In this project we used the codon usage dataset from UCI. We classified species based on two kingdoms, plant & virus, using logistic lasso, logistic elastic net, logistic ridge, and random forest. All four models performed really well on both training and test datasets.  
+In this project we used the codon usage dataset from UCI. We classified species to one of the two kingdoms, plant or virus, using logistic lasso, logistic elastic net, logistic ridge, and random forest. All four models performed really well on both training and test datasets.  
