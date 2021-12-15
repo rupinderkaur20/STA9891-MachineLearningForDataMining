@@ -195,7 +195,7 @@ p2 <- auc.df %>%
 
 grid.arrange(p1, p2, nrow = 1)
 
-###################### Fitting Models on all data #############################
+############################ Fitting Models on all data ##################################
 # logistic lasso
 lasso.cv.start = Sys.time()
 lasso.cv.fit = cv.glmnet(as.matrix(X), Y, family = "binomial", alpha = 1, 
@@ -249,7 +249,7 @@ Time = c(lasso.cv.time, elnet.cv.time, ridge.cv.time, rf.cv.time)
 
 time.vs.acc = data.frame(Model, AUC.Median, Time)
 
-################## Bar Plots of Standardized Coefficients #####################
+######################## Bar Plots of Standardized Coefficients ##########################
 beta.df = data.frame(Lasso = as.numeric(lasso.fit$beta), 
                      Elastic.Net = as.numeric(elnet.fit$beta),
                      Ridge = as.numeric(ridge.fit$beta),
