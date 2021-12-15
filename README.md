@@ -8,7 +8,7 @@ The original data has 13,028 rows and 68 features excluding the target variable.
  - bct (bacteria) 
  - pln (plant)  
  - mam (mammal) 
- - vrl (virus)​
+ - vrl (virus)
 
 Few of the features are:
 - specie's name
@@ -16,15 +16,15 @@ Few of the features are:
 - DNA Type
 - Number of Codons
 - Frequencies of 64 codons (64 columns). Some Codons are given below:  
-    - UUU: codes for amino acid phenylalanine​
-    - CUU: codes for amino acid leucine​
-    - GGU: codes for amino acid valine​
+    - UUU: codes for amino acid phenylalanine
+    - CUU: codes for amino acid leucine
+    - GGU: codes for amino acid valine
 
 This dataset uses codon frequencies to classify species into different Kingdoms. Each codon form a unit of genetic code in DNA or RNA, and they code for different amino acids. Few examples can be seen above. 
 
 As for our analysis, we only used a subset of the dataset. Because we are doing binary classification, we filtered the observations that only contained the following two classes for Kingdom: 
 - Pln (plant) -> 0 (Negative)
-- Vrl (virus)​ -> 1 (Positive)
+- Vrl (virus) -> 1 (Positive)
 
 The class imbalance ratio is 2523/2831 = 0.89. Therefore there was not a big imbalance between the two classes. 
 
@@ -59,7 +59,7 @@ We observe that all models perform really well with median test AUC of above 0.9
 
 For the final part of the analysis, we plotted coefficients from logistic lasso, logistic ridge and logistic elastic net and variable importance from random forest. Below are the plots:
 
-![Coefficients](Images/Coefficients.png)
+![coefficients](Images/Coefficients.png)
 
 We notice that for lasso, elastic net and ridge, most important codons with  positive coefficents are UGA, UAG & UAA, which means that they are the most important when classifying a species as plant. On the other hand, UGU, ACA & CCC are the most important codons with negative coefficients for elastic net and lasso, which means they are most important to classify species as virus. For ridge, most important codons with negative coefficeints are UGU, ACA & AGG. And for random forest, ACA, CUU, UGU & GAC are most important variables. 
 
