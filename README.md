@@ -59,7 +59,7 @@ We observe that all models perform really well with median test AUC of above 0.9
 
 For the final part of the analysis, we plotted coefficients from logistic lasso, logistic ridge and logistic elastic net and variable importance from random forest. Below are the plots:
 
-![coefficients](Images/Coefficients.png)
+![Coefficients](Images/coefficients.png)
 
 We notice that for lasso, elastic net and ridge, most important codons with  positive coefficents are UGA, UAG & UAA, which means that they are the most important when classifying a species as plant. On the other hand, UGU, ACA & CCC are the most important codons with negative coefficients for elastic net and lasso, which means they are most important to classify species as virus. For ridge, most important codons with negative coefficeints are UGU, ACA & AGG. And for random forest, ACA, CUU, UGU & GAC are most important variables. 
 
