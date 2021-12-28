@@ -23,8 +23,8 @@ Few of the features are:
 This dataset uses codon frequencies to classify species to one of the Kingdoms. Each codon form a unit of genetic code in DNA or RNA, and they code for different amino acids. Few examples can be seen above. 
 
 As for our analysis, we only used a subset of the dataset. Because we are doing binary classification, we filtered the observations that only contained the following two classes for Kingdom: 
-- Pln (plant) -> 0 (Negative)
-- Vrl (virus) -> 1 (Positive)
+- Pln (plant) -> 1 (Positive)
+- Vrl (virus) -> 0 (Negative)
 
 The class imbalance ratio is 2523/2831 = 0.89. Therefore there was not a big imbalance between the two classes. 
 
